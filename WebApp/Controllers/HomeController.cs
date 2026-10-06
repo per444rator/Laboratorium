@@ -48,10 +48,12 @@ public class HomeController : Controller
         int age = now.Year - birthYear.Value.Year;
         if (birthYear.Value.AddYears(age) > now)
         {
-            
+            return View();
         }
-        
-        return View(birthYear);
     }
-    
+
+    public IActionResult AgeForm()
+    {
+        return View();
+    }
 }

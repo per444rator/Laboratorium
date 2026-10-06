@@ -21,4 +21,9 @@ public class BookController : Controller
         
         return View();
     }
+
+    public IActionResult Echoform()
+    {
+        return View();
+    }
 }
